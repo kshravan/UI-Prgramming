@@ -30,4 +30,57 @@
 		console.log("Hello "+name)
 	}
 	newFunction("Shravan")
+	var myGlobal = "10"
+	function func2(){
+		if(typeof myGlobal!="undefined"){
+			console.log("Not a global")
+		}
+		else{
+			console.log("Global")
+		}
+	}
+	func2()
+	var localParam = "50"
+	function func3(){
+		var localParam = "30"
+		console.log(localParam)
+	}
+	func3()
+	console.log(localParam)
+	var sum =0;
+	function functionSum3(){
+		sum = sum+3
+	}
+	console.log(functionSum3())
+	function nextInline(param, arr){
+		arr.push(param)
+		return param
+	}
+	var testArr = [1,2,3,4,5,6]
+	console.log(JSON.stringify(testArr))
+	nextInline(7,testArr)
+	console.log(JSON.stringify(testArr))
+	function trueorfalse(param){
+		if(param){
+			return "Its true"
+		}
+		else{
+			return "Its false"
+		}
+
+	}
+	console.log(trueorfalse(true))
+	function testEqual(t1,t2){
+		if(t1==t2){
+			return "They are equal"
+		}
+		else{
+			return "they are not equal"
+		}
+	}
+	console.log(3=='3')	
+	//Strict Equality
+	console.log(3==='3')
+	console.log(3!='3')
+	console.log(3!=='3')
 </script>
