@@ -83,4 +83,53 @@
 	console.log(3==='3')
 	console.log(3!='3')
 	console.log(3!=='3')
+	function caseInSwitch(val){
+		var answer = ""
+		switch(val){
+			case 1:
+			answer = "alpha"
+			break
+			case 2:
+			answer = "Beta"
+			case 3:
+			case 4:
+			case 5:
+			answer = "Gamma"
+			break
+			default:
+			answer = "Default vale"
+		}
+		return answer
+	}
+	console.log(caseInSwitch(2))
+	console.log(caseInSwitch(3))
+	console.log(caseInSwitch(4))
+	console.log(caseInSwitch(5))
+	function isLessThan(a,b){
+		return a<b
+	}
+	console.log(isLessThan(10,20))
+	console.log(isLessThan(20,10))
+	function abTest(a,b){
+		if(a<0 || b<0){
+			return undefined
+		}
+	}
+	abTest(-1,-2)
+	var ourDog = {
+		"name" : "Micky",
+		"legs" : "4",
+		"tail" : "1",
+		"friends" : ["Kumar","Kiran"]
+	}
+	console.log("tail count "+ourDog.tail)
+	console.log("Legds "+ourDog.legs)
+	console.log(ourDog["name"])
+	ourDog.name = "Nicky"
+	console.log(ourDog.name)
+	ourDog.color = "brown"
+	console.log(ourDog)
+	delete ourDog.legs
+	console.log(ourDog)
+	console.log(ourDog.hasOwnProperty("name"))
 </script>
