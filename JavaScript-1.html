@@ -132,4 +132,54 @@
 	delete ourDog.legs
 	console.log(ourDog)
 	console.log(ourDog.hasOwnProperty("name"))
+	var arrayOfObjects = [
+	{
+	"Shravan" : "Kumar",
+	"titles" : ["nani","chinnu"
+	]
+},
+{
+	"nani":"kumar",
+	"titles" : ["1","2"]
+}
+	];
+	console.log(arrayOfObjects[1].nani)
+	var nestedObject = {
+		"1" : {
+			"Shravan":"kumar"
+		},
+		"2":{
+			"Nani":"1994"
+		}
+	}
+	console.log(JSON.stringify(nestedObject))
+	delete nestedObject[1]["Shravan"]
+	console.log(JSON.stringify(nestedObject))
+
+	var newArray = []
+	i=0
+	while(i<5){
+		newArray.push(i)
+		i++
+
+	}
+	console.log(newArray)
+	for(var i =0;i<100;i+=5){
+		newArray.push(i+5)
+	}
+	console.log(newArray)
+	var multiply = 1
+	var product =[[1,2],[3,4],[5,6]]
+	function mutlidimentsion(arr){
+		for(var i=0;i<product.length;i++){
+			for(var j=0;j<product[i].length;j++){
+				multiply *= product[i][j]
+			}
+		}
+		return multiply
+	}
+	console.log(mutlidimentsion(product))
+	console.log(Math.random())
+	console.log(Math.floor(Math.random()*20))
+
 </script>
