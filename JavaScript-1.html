@@ -181,5 +181,42 @@
 	console.log(mutlidimentsion(product))
 	console.log(Math.random())
 	console.log(Math.floor(Math.random()*20))
-
+	console.log(Math.random()*(20-1)+1)
+	console.log(parseInt("56"))
+	console.log(parseInt("1100",2))
+	console.log(5>4?true:false)
+	console.log(-1>0?"positive":-1<0?"negative":"zero")
+	let catName = "Quincy"
+	catName = "aunchy"
+	console.log(catName)
+	const SENTENCE = "CONSTANT"
+	// Error SENTENCE = "CONSTANT VALUE"
+	function freeze(){
+		"use strict"
+		const MATH_CONSTANTS = {
+			PI : "3.14"
+		};
+		Object.freeze(MATH_CONSTANTS)
+	
+	try{
+		MATH_CONSTANTS.PI = "98"
+	}
+	catch(ex){
+		console.log(ex)
+	}
+	return MATH_CONSTANTS.PI
+}
+const pi = freeze()
+console.log(pi)
+var magic = function(){
+return new Date()
+};
+console.log(magic)
+var magic2 = () => new Date()
+console.log(magic)
+console.log(magic2)
+console.log(newArr.reduce((a,b) => a+b,0))
+var voxel = {x:1,y:2,z:3}
+var {x:a,y:b,z:c} = voxel
+console.log(a)
 </script>
