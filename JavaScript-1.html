@@ -219,4 +219,49 @@ console.log(newArr.reduce((a,b) => a+b,0))
 var voxel = {x:1,y:2,z:3}
 var {x:a,y:b,z:c} = voxel
 console.log(a)
+const source=[1,2,3,4,5,6,7,8,9,10]
+function removeFirstTwoElements(arr){
+	const [,,...arr2] = arr
+	return arr2
+}
+console.log(removeFirstTwoElements(source))
+const Person = {
+	name:"Shravan",
+	age:"27"
+};
+
+const greeting = 'Hello My name is ${Person.name} and I am ${Person.age} old'
+console.log(greeting)
+const createPerson = (name,age,gender) => ({name,age,gender})
+console.log(createPerson("shravan","26","Male"))
+function makeClass(){
+	class Vegetable{
+		constructor(name){
+			this.name=name
+		}
+	}
+	return Vegetable
+}
+
+const Vegetable = makeClass()
+const carrot = new Vegetable('carrot')
+console.log(carrot.name)
+function makeClass1(){
+	class Thermostat{
+		constructor(temp){
+			this._temp=(5/9)*(temp-32)
+		}
+		get temperature(){
+			return this._temp
+		}
+		set temperature(temp){
+			this._temp = temp
+		}
+	}
+	return Thermostat
+}
+const themr = makeClass1()
+const thrmostatsclass = new themr(76)
+console.log(thrmostatsclass.temp)
+//export const cap = str => str.toUpperCase()
 </script>
